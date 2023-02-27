@@ -1,0 +1,57 @@
+/**********CSS FÖR MENY.HTML**********/
+
+article {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+main ul {
+  background-color: rgba(247, 237, 226, 0.8);
+  border-radius: 10%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 30px;
+}
+
+table {
+  align-items: center;
+  background-color: rgba(247, 237, 226, 0.8);
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+h2 {
+  border-bottom: dotted 5px rgba(242, 132, 130, 1);
+  font-size: 40px;
+  padding: 20px;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+P {
+  font-size: 18px;
+  padding: 5px;
+}
+
+li:hover {
+  background-color: rgba(132, 165, 157, 0.8);
+  color: black;
+  font-size: 30px;
+}
+
+tr:hover {
+  background-color: rgba(132, 165, 157, 0.8);
+  color: black;
+  font-size: 30px;
+}

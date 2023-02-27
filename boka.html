@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="initial-scale=1, width=device-width" name="viewport" />
+    <title>Boka glasskiosken</title>
+    <meta
+      name="description"
+      content="Ice Cream Therapy är en glasskiosk på hjul. På webplatsen kan du boka kiosken, se menyn och få reda på mer om företaget."
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="boka.css" />
+  </head>
+  <body style="font-family: Standard, sans-serif">
+    <!--GRID-CONTAINER FÖR HELA HEMSIDAN-->
+    <div class="grid-container">
+      <!--HEADER-->
+      <header>
+        <img
+          src="header-small.jpg"
+          srcset="
+            header-small.jpg  360w,
+            header-medium.jpg 500w,
+            header-large.jpg  800w
+          "
+          alt="Header. Bild med lysrör som skapar företagets namn, Ice cream therapy"
+          sizes="100vw"
+        />
+
+        <!--NAVBAR-->
+        <nav>
+          <ul>
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="meny.html">Meny</a></li>
+            <li><a href="boka.html">Boka</a></li>
+          </ul>
+        </nav>
+        <h1 style="font-family: Kursiv, sans-serif">Boka oss!</h1>
+      </header>
+
+      <!--MAIN-->
+      <main>
+        <!--FORMULÄR FÖR BOKNING-->
+        <article>
+          <h2>Boka trucken</h2>
+          <p>Fyll i formulären så kontaktar vi dig.</p>
+          <form action="send.html" method="get" class="order">
+            <fieldset>
+              <legend>Bokningsförfrågan</legend>
+
+              <!--FÖRNAMN-->
+              <label>
+                Förnamn:
+                <input name="first-name" placeholder="Förnamn" tabindex="0" />
+              </label>
+
+              <!--EFTERNAMN-->
+              <label>
+                Efternamn:
+                <input name="last-name" placeholder="Efternamn" tabindex="0" />
+              </label>
+
+              <!--EMAIL-->
+              <label>
+                Email:
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="namn.namnsson@gmail.com"
+                  tabindex="0"
+                />
+              </label>
+
+              <!--TELEFONNUMMER-->
+              <label>
+                Telefonnummer:
+                <input type="tel" placeholder="+46" tabindex="0" />
+              </label>
+
+              <!--DATUM-->
+              <label aria-hidden="true">
+                Välj datum:
+                <input type="date" name="boka" tabindex="0" />
+              </label>
+
+              <!--CHECKBOX NYHETSBREV-->
+              <label id="nyhetsbrev">
+                <input type="checkbox" tabindex="0" />
+                Vill du ha vårt nyhetsbrev?
+              </label>
+
+              <!--SKICKA FORMULÄREN-->
+              <label>
+                <img
+                  id="sendbutton"
+                  src="sendbutton.png"
+                  alt="Skicka knapp"
+                  tabindex="0"
+                  aria-hidden="true"
+                />
+                <button class="sr-only2">Skicka</button>
+              </label>
+            </fieldset>
+          </form>
+        </article>
+      </main>
+
+      <!--SIDEBAR 1-->
+      <aside id="sidebar1">
+        <img
+          src="icecream-neon.jpg"
+          alt="Text i neon. Texten lyder, Icecream solves everything "
+        />
+
+        <img
+          src="icecream-bowls.jpg"
+          alt="Glassskålar på rad, Ljusblå bakgrund."
+        />
+
+        <img
+          src="spilled-icecream.jpg"
+          alt="Glass med jordgubbar och choklad som tappas i luften. Gul bakgrund. "
+        />
+
+        <img
+          src="raspberry-icecream.jpg"
+          alt="Sex stycken glassar ligger på vit marmor och har hallon omkring sig."
+        />
+
+        <img
+          src="icecream-glass.jpg"
+          alt="Glass i glasskål med en sked i. Ljusgul bakgrund."
+        />
+
+        <!--SIDEBAR 2-->
+      </aside>
+      <aside id="sidebar2">
+        <img
+          src="brown-small.jpg"
+          srcset="
+            brown-small.jpg  400w,
+            brown-medium.jpg 650w,
+            brown-large.jpg  800w
+          "
+          alt="Chockladglass i halv strut. Vit bakgrund."
+          sizes="50vw"
+        />
+
+        <img
+          src="icecreams-bluebackground.jpg"
+          alt="Fem stycken glasstrutar som ligger slängda på blå bakgrund."
+        />
+
+        <img
+          src="icecream-dots.jpg"
+          alt="Glasskulor som ligger som prickar som bilar en fyrkant.Rosa bakgrund"
+        />
+
+        <img
+          src="yellowicecream.jpg"
+          alt="En hand håller om en glassstrut med två kulor glass i. Gul bakgrund."
+        />
+
+        <img src="pink-cone.jpg" alt="Rosa glassrån. Vit bakgrund." />
+      </aside>
+
+      <!--FOOTER-->
+      <footer id="footer">
+        <h4 class="sr-only">Sociala medie länkar</h4>
+        <a href="boka.html">Tillbaka upp</a>
+
+        <!--SOCIALA MEDIE-LOGGOR MED LÄNKAR-->
+        <div class="socialmedia-img">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="facebook.png" id="facebook-img" alt="facebook logo" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="instagram.png" id="instagram-img" alt="instagram logo" />
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank">
+            <img src="tiktok.png" id="tiktok-img" alt="tiktok logo" />
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

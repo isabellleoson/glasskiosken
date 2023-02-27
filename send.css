@@ -1,0 +1,25 @@
+/**********CSS FÖR SEND.HTML**********/
+
+body {
+  background-color: rgba(246, 189, 96, 1);
+  margin: 0px;
+}
+
+hgroup {
+  border-bottom: solid 1px rgba(33, 20, 11, 1);
+  color: rgba(33, 20, 11, 1);
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+a {
+  color: rgba(33, 20, 11, 1);
+  font-size: 20px;
+  margin: 25px;
+}
+
+a:hover {
+  background-color: rgba(33, 20, 11, 1);
+  color: rgba(246, 189, 96, 1);
+}

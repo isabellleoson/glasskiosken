@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="initial-scale=1, width=device-width" name="viewport" />
+    <title>Meny - Se glassmenyn och priser.</title>
+    <meta
+      name="description"
+      content="Ice Cream Therapy är en glasskiosk på hjul. På webplatsen kan du boka kiosken, se menyn och få reda på mer om företaget."
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="meny.css" />
+  </head>
+  <body style="font-family: Standard, sans-serif">
+    <!--GRID-CONTAINER FÖR HELA HEMSIDAN-->
+    <div class="grid-container">
+      <!--HEADER-->
+      <header>
+        <img
+          src="header-small.jpg"
+          srcset="
+            header-small.jpg  360w,
+            header-medium.jpg 500w,
+            header-large.jpg  800w
+          "
+          alt="Header. Bild med företagets namn, Ice cream therapy"
+          sizes="100vw"
+        />
+
+        <!--NAVBAR-->
+        <nav>
+          <ul>
+            <li><a href="index.html">Startsida</a></li>
+            <li><a href="meny.html">Meny</a></li>
+            <li><a href="boka.html">Boka</a></li>
+          </ul>
+        </nav>
+        <h1 style="font-family: Kursiv, sans-serif">Glassmeny</h1>
+      </header>
+
+      <!--MAIN-->
+      <main>
+        <!--GLASSMENY-->
+        <article>
+          <h2>Ice Cream Therapy glassar och priser</h2>
+          <section>
+            <h3>Glassar</h3>
+            <ul>
+              <li>Vaniljglass</li>
+              <li>Chockladglass</li>
+              <li>Jordgubbsglass</li>
+              <li>Blåbärsglass</li>
+            </ul>
+          </section>
+
+          <!--PRISLISTA-->
+          <section>
+            <h3>Priser</h3>
+            <table>
+              <tr>
+                <th>Kulor</th>
+                <th>Pris</th>
+              </tr>
+              <tr>
+                <td>1 kula</td>
+                <td>35kr</td>
+              </tr>
+              <tr>
+                <td>2 kulor</td>
+                <td>45kr</td>
+              </tr>
+              <tr>
+                <td>3 kulor</td>
+                <td>53kr</td>
+              </tr>
+              <tr>
+                <td>4 kulor</td>
+                <td>60kr</td>
+              </tr>
+            </table>
+            <p>Alla kulor över 4st kostar 5kr styck.</p>
+          </section>
+        </article>
+      </main>
+
+      <!--SIDEBAR1-->
+      <aside id="sidebar1">
+        <h3>Allergier?</h3>
+        <p>Vi har både laktosfri- och vegansk glass.</p>
+        <p>Övriga frågor gällande allergier, var god kontakta oss.</p>
+        <img
+          src="icecream-neon.jpg"
+          alt="Text i neon. Texten lyder, Icecream solves everything "
+        />
+
+        <img src="icecream-bowls.jpg" alt="glassskålar på rad. Blå bakgrund" />
+
+        <img
+          src="icecream-glass.jpg"
+          alt="Glass i glasskål med en sked i. Ljusgul bakgrund."
+        />
+      </aside>
+      <!--SIDEBAR2-->
+      <aside id="sidebar2">
+        <img
+          src="brown-small.jpg"
+          srcset="
+            brown-small.jpg  400w,
+            brown-medium.jpg 650w,
+            brown-large.jpg  800w
+          "
+          alt="Chockladglass i halv strut. Vit bakgrund."
+          sizes="50vw"
+        />
+
+        <img
+          src="icecreams-bluebackground.jpg"
+          alt="Fem stycken glasstrutar som ligger slängda på blå bakgrund."
+        />
+
+        <img
+          src="icecream-dots.jpg"
+          alt="Glasskulor som ligger som prickar som bilar en fyrkant.Rosa bakgrund"
+        />
+
+        <img
+          src="yellowicecream.jpg"
+          alt="En hand håller om en glassstrut med två kulor glass i. Gul bakgrund."
+        />
+
+        <img src="pink-cone.jpg" alt="Rosa glassrån. Vit bakgrund." />
+      </aside>
+
+      <!--FOOTER-->
+      <footer>
+        <h4 class="sr-only">Sociala medie länkar</h4>
+        <a href="meny.html">Tillbaka upp</a>
+
+        <!--SOCIALA MEDIER LOGGOR MED LÄNKAR-->
+        <div class="socialmedia-img">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="facebook.png" id="facebook-img" alt="facebook logo" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="instagram.png" id="instagram-img" alt="instagram logo" />
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank">
+            <img src="tiktok.png" id="tiktok-img" alt="tiktok logo" />
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

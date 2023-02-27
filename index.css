@@ -1,0 +1,278 @@
+/******BASEN FÖR ALL CSS PÅ WEBPLATSEN******/
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Standard;
+  src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Kursiv;
+  src: url(DancingScript-VariableFont_wght.ttf);
+}
+
+body {
+  background-color: rgba(245, 202, 195, 1);
+  margin: 0px;
+}
+
+header > img {
+  max-width: 100%;
+}
+
+nav {
+  border: dotted 5px rgba(242, 132, 130, 1);
+  position: sticky;
+  top: 0;
+  margin: 0 10px 0 10px;
+}
+
+ul {
+  align-items: center;
+  background-color: rgba(246, 189, 96, 1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 10px;
+  width: 100%;
+}
+
+a {
+  color: rgba(55, 1, 7, 0.9);
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: rgba(8, 5, 0, 1);
+  font-size: 40px;
+  text-align: center;
+}
+
+a:hover {
+  background-color: rgba(242, 132, 130, 1);
+  box-shadow: 0 3px 5px 0;
+  color: black;
+  font-size: 30px;
+  padding: 5px;
+}
+
+p:hover {
+  background-color: rgba(132, 165, 157, 0.9);
+  box-shadow: 0 3px 5px 0;
+  color: black;
+  font-size: 20px;
+}
+
+h1:hover {
+  background-color: rgba(132, 165, 157, 0.9);
+  box-shadow: 0 3px 5px 0;
+  color: black;
+  font-size: 40px;
+}
+
+h2:hover {
+  background-color: rgba(132, 165, 157, 0.9);
+  box-shadow: 0 3px 5px 0;
+  color: black;
+  font-size: 40px;
+}
+
+h3:hover {
+  background-color: rgba(132, 165, 157, 0.9);
+  box-shadow: 0 3px 5px 0;
+  color: black;
+  font-size: 30px;
+}
+
+main {
+  text-align: center;
+}
+
+#sidebar1 {
+  background-color: rgba(242, 132, 130, 0.8);
+  font-size: 12px;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+}
+
+#sidebar2 {
+  background-color: rgba(242, 132, 130, 0.8);
+  display: flex;
+  flex-direction: column;
+}
+
+aside img {
+  background-attachment: fixed;
+  border: dotted 10px rgba(132, 165, 157, 0.9);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  max-width: 100%;
+  object-fit: contain;
+  opacity: 0.9;
+  padding: 5px;
+}
+
+footer {
+  background-color: rgb(181, 142, 136);
+}
+
+.socialmedia-img {
+  display: flex;
+  justify-content: center;
+}
+
+#sendbutton:hover {
+  background-color: rgba(242, 132, 130, 1);
+  box-shadow: 0 10px 10px 0;
+  color: black;
+  font-size: 30px;
+  padding: 5px;
+}
+
+/**********DÖLJER RUBRIKEN I FOOTER**********/
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/*******MEDIA QUIRE BODY SMALL SCREEN********/
+@media (min-width: 360px) and (max-width: 400px) {
+  .grid-container {
+    display: grid;
+    gap: 5px;
+    grid: 0.1fr 0.2fr 0.5fr 1fr 0.01fr/ 1fr;
+    width: auto;
+  }
+
+  header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  main {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+
+  #sidebar1 {
+    grid-column: 1 / 4;
+    grid-row: 3;
+  }
+
+  #sidebar2 {
+    grid-column: 1 / 4;
+    grid-row: 4;
+  }
+
+  footer {
+    grid-column: 1 / 4;
+    grid-row: 5;
+  }
+}
+
+/*MEDIA QUIRE BODY MEDIUM SCREEN */
+@media (min-width: 400px) and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid: 0.2fr 0.3fr 0.5fr 0.05fr/ 1fr 1fr;
+    gap: 5px;
+    width: auto;
+  }
+
+  header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h1:hover {
+    font-size: 50px;
+  }
+
+  main {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+
+  #sidebar1 {
+    grid-column: 1 / 2;
+    grid-row: 3;
+  }
+
+  #sidebar2 {
+    grid-column: 2 / 4;
+    grid-row: 3;
+  }
+
+  footer {
+    grid-column: 1 / 4;
+    grid-row: 4;
+  }
+}
+
+/*MEDIA QUIRE BODY LARGE SCREEN*/
+@media (min-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid: 0.8fr 1fr 0.2fr/ 1fr 3fr 1fr;
+    gap: 1px;
+    width: auto;
+  }
+
+  header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    font-size: 25px;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+  h1:hover {
+    font-size: 70px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  p:hover {
+    font-size: 25px;
+  }
+
+  main {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+  }
+
+  #sidebar1 {
+    grid-column: 1;
+    grid-row: 2 / 4;
+  }
+
+  #sidebar2 {
+    grid-column: 3;
+    grid-row: 2 / 4;
+  }
+
+  footer {
+    grid-column: 1 / 4;
+    grid-row: 4;
+  }
+}
